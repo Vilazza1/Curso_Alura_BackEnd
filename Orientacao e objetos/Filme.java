@@ -8,6 +8,10 @@ public class Filme {
     private int notaDoFilme;
     int duracao;
 
+    int getnotaDoFilme() {
+        return notaDoFilme;
+    }
+
     void exibeFichaTecnica() {
         System.out.println("Nome do filme: " + nome);
         System.out.println("Ano De Lancamento: " + anoDeLancamento);
