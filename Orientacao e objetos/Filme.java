@@ -4,8 +4,8 @@ public class Filme {
     String nome;
     int anoDeLancamento;
     boolean incluidoNoPlano;
-    double somaDasAvaliacao;
-    int notaDoFilme;
+    private double somaDasAvaliacao;
+    private int notaDoFilme;
     int duracao;
 
     void exibeFichaTecnica() {
@@ -18,7 +18,7 @@ public class Filme {
         notaDoFilme++;
     }
 
-    double mediaDasNotas(){
-        return  somaDasAvaliacao / notaDoFilme;
+    double mediaDasNotas() {
+        return somaDasAvaliacao / notaDoFilme;
     }
 }

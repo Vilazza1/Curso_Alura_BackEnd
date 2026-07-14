@@ -14,6 +14,9 @@ public class Principal {
         System.out.println(meuFilme.somaDasAvaliacao);
         System.out.println(meuFilme.notaDoFilme);
         System.out.println(meuFilme.mediaDasNotas());
+        meuFilme.somaDasAvaliacao = 10;
+        meuFilme.notaDoFilme = 1;
+        System.out.println(meuFilme.mediaDasNotas());
 
     }
 }
