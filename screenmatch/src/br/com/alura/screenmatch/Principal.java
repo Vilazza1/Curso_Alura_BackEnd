@@ -1,5 +1,6 @@
+package br.com.alura.screenmatch;
 
-import br.com.alura.screenmatch.modelos.*;
+import br.com.alura.screenmatch.modelos.Filme;
 
 public class Principal {
 
@@ -13,7 +14,7 @@ public class Principal {
         meuFilme.avalia(8);
         meuFilme.avalia(7);
         meuFilme.avalia(10);
-        System.out.println("Total de avaliações: " + meuFilme.getnotaDoFilme());
+        System.out.println("Total de avaliações: " + meuFilme.getNotaDoFilme());
 
         System.out.println(meuFilme.mediaDasNotas());
 
