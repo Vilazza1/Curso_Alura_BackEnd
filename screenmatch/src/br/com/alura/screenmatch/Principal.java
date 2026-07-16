@@ -6,9 +6,9 @@ public class Principal {
 
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
-        meuFilme.nome = "Devoradores De Estrelas";
-        meuFilme.anoDeLancamento = 2026;
-        meuFilme.duracao = 156;
+        meuFilme.setNome("Devoradores De Estrelas");
+        meuFilme.setAnoDeLancamento(2026);;
+        meuFilme.setDuracao(156);
 
         meuFilme.exibeFichaTecnica();
         meuFilme.avalia(8);

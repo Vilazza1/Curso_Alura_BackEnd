@@ -2,16 +2,33 @@ package br.com.alura.screenmatch.modelos;
 
 public class Filme {
 
-    public String nome;
-    public int anoDeLancamento;
-    public boolean incluidoNoPlano;
+    private String nome;
+    private int anoDeLancamento;
+    private boolean incluidoNoPlano;
     private double somaDasAvaliacao;
     private int notaDoFilme;
-    public int duracao;
+    private int duracao;
 
     public int getNotaDoFilme() {
         return notaDoFilme;
     }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setIncluidoNoPlano(boolean incluidoNoPlano) {
+        this.incluidoNoPlano = incluidoNoPlano;
+    }
+
+    public void setDuracao(int duracao) {
+        this.duracao = duracao;
+    }
+
+    public void setAnoDeLancamento(int anoDeLancamento) {
+        this.anoDeLancamento = anoDeLancamento;
+    }
+    
 
     public void exibeFichaTecnica() {
         System.out.println("Nome do filme: " + nome);
