@@ -9,9 +9,15 @@ public class Titulo {
     private int notaDoFilme;
     private int duracao;
 
+
     public int getNotaDoFilme() {
         return notaDoFilme;
     }
+
+    public int getDuracao() {
+        return duracao;
+    }
+
 
     public void setNome(String nome) {
         this.nome = nome;
@@ -29,15 +35,19 @@ public class Titulo {
         this.anoDeLancamento = anoDeLancamento;
     }
 
+
     public void exibeFichaTecnica() {
         System.out.println("Nome do filme: " + nome);
         System.out.println("Ano de lançamento: " + anoDeLancamento);
+        System.out.println("Duração: " + duracao + " minutos");
     }
+
 
     public void avalia(double nota) {
         somaDasAvaliacao += nota;
         notaDoFilme++;
     }
+
 
     public double mediaDasNotas() {
         return somaDasAvaliacao / notaDoFilme;

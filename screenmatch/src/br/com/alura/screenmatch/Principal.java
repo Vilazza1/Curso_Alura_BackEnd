@@ -10,6 +10,8 @@ public class Principal {
         meuFilme.setNome("Devoradores De Estrelas");
         meuFilme.setAnoDeLancamento(2026);;
         meuFilme.setDuracao(156);
+        
+        System.out.println("Duração do Filme: " + meuFilme.getDuracao());
 
         meuFilme.exibeFichaTecnica();
         meuFilme.avalia(8);
@@ -25,5 +27,7 @@ public class Principal {
         lost.exibeFichaTecnica();
         lost.setTemporadas(10);
         lost.setepPorTemporada(10);
+        lost.setMinutosPorEpisodio(50);
+        System.out.println("Duração para maratonar Lost : " + lost.getDuracao());
     }
 }
