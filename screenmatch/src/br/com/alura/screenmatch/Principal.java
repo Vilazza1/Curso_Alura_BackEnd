@@ -1,5 +1,6 @@
 package br.com.alura.screenmatch;
 
+import br.com.alura.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
@@ -10,7 +11,7 @@ public class Principal {
         meuFilme.setNome("Devoradores De Estrelas");
         meuFilme.setAnoDeLancamento(2026);;
         meuFilme.setDuracao(156);
-        
+
         System.out.println("Duração do Filme: " + meuFilme.getDuracao());
 
         meuFilme.exibeFichaTecnica();
@@ -29,5 +30,16 @@ public class Principal {
         lost.setepPorTemporada(10);
         lost.setMinutosPorEpisodio(50);
         System.out.println("Duração para maratonar Lost : " + lost.getDuracao());
+
+        Filme outroFilme = new Filme();
+        outroFilme.setNome("Avatar");
+        outroFilme.setAnoDeLancamento(2023);;
+        outroFilme.setDuracao(200);
+
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        calculadora.inclui(meuFilme);
+        calculadora.inclui(outroFilme);
+        calculadora.inclui(lost);
+        System.out.println(calculadora.getTempoTotal());
     }
 }
