@@ -16,7 +16,7 @@ public class Filme extends Titulo implements Classicavel {
 
     @Override
     public int getClassificacao() {
-        return 0;
+        return (int) mediaDasNotas() / 2;
     }
 
 }
