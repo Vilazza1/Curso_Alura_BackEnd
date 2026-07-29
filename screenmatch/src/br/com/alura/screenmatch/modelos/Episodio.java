@@ -9,6 +9,19 @@ public class Episodio implements Classicavel {
     private Serie serie;
     private int totalVisulizacao;
 
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public void setSerie(Serie serie) {
+        this.serie = serie;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+
     public int getTotalVisulizacao() {
         return totalVisulizacao;
     }

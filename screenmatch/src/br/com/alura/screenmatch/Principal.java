@@ -49,6 +49,8 @@ public class Principal {
 
         Episodio episodio = new Episodio();
         episodio.setNumero(1);
-        episodio
+        episodio.setSerie(lost);
+        episodio.setTotalVisulizacao(3000);
+        filtro.filtra(episodio);
     }
 }
