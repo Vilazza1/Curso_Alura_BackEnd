@@ -2,6 +2,7 @@ package principal;
 
 import modelos.Musica;
 import modelos.Podcast;
+import modelos.minhasFavoritas;
 
 public class Principal {
 
@@ -29,5 +30,9 @@ public class Principal {
         for (int i = 0; i < 1000; i++) {
             meuPodcast.curti();
         }
+
+        minhasFavoritas preferidas = new minhasFavoritas();
+        preferidas.inclui(meuPodcast);
+        preferidas.inclui(minMusica);
     }
 }
