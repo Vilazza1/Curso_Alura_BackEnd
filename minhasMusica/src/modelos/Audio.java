@@ -5,7 +5,7 @@ public class Audio {
     private String titulo;
     private int totalDeVisualizacao;
     private int totalCurtidas;
-    private double classificacao;
+    private int classificacao;
 
     public String getTitulo() {
         return titulo;
@@ -15,7 +15,7 @@ public class Audio {
         this.titulo = titulo;
     }
 
-    public double getClassificacao() {
+    public int getClassificacao() {
         return classificacao;
     }
 
@@ -27,7 +27,7 @@ public class Audio {
         return totalDeVisualizacao;
     }
 
-    public void curti () {
+    public void curti() {
         this.totalCurtidas++;
     }
 
