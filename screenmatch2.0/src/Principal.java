@@ -9,8 +9,7 @@ import java.util.ArrayList;
 public class Principal {
 
     public static void main(String[] args) {
-        Filme meuFilme = new Filme("O poderoso chefão");
-        meuFilme.setAnoDeLancamento(1970);
+        Filme meuFilme = new Filme("O poderoso chefão", 1970);
         meuFilme.setDuracaoEmMinutos(180);
         System.out.println("Duração do filme: " + meuFilme.getDuracaoEmMinutos());
 
@@ -24,17 +23,14 @@ public class Principal {
         //meuFilme.totalDeAvaliacoes = 1;
         //System.out.println(meuFilme.pegaMedia());
 
-        Serie lost = new Serie();
-        lost.setNome("Lost");
-        lost.setAnoDeLancamento(2000);
+        Serie lost = new Serie("Lost", 200);
         lost.exibeFichaTecnica();
         lost.setTemporadas(10);
         lost.setEpisodiosPorTemporada(10);
         lost.setMinutosPorEpisodio(50);
         System.out.println("Duração para maratonar Lost: " + lost.getDuracaoEmMinutos());
 
-        Filme outroFilme = new Filme("Avatar");
-        outroFilme.setAnoDeLancamento(2023);
+        Filme outroFilme = new Filme("Avatar", 2023);
         outroFilme.setDuracaoEmMinutos(200);
 
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
@@ -52,8 +48,7 @@ public class Principal {
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
 
-        var filmeDoVinicius = new Filme("Dogville");
-        filmeDoVinicius.setDuracaoEmMinutos(200);
+        var filmeDoVinicius = new Filme("Dogville", 200);
         filmeDoVinicius.setAnoDeLancamento(2003);
         filmeDoVinicius.avalia(10);
 
