@@ -1,3 +1,4 @@
+package br.com.alura.screenmatch.principal;
 
 import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
@@ -48,7 +49,7 @@ public class Principal {
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
 
-        var filmeDoVinicius = new Filme("Dogville", 200);
+        var filmeDoVinicius = new Filme("Dogville", 2003);
         filmeDoVinicius.setAnoDeLancamento(2003);
         filmeDoVinicius.avalia(10);
 
