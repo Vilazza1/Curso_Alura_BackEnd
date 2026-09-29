@@ -29,9 +29,9 @@ public class Listas {
 
         for (Titulo item : lista) {
             System.out.println(item.getNome());
-            Filme filme = (Filme) item;
-            System.out.println("Classificação " + filme.getClassificacao());
-
+            if(item instanceof Filme filme && filme.getClassificacao() > 2) {
+                System.out.println("Classificação " + filme.getClassificacao());
+            }
         }
 
     }
