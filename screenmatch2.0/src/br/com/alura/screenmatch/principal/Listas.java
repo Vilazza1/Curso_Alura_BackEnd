@@ -48,5 +48,8 @@ public class Listas {
         System.out.println("Lista de titulos ordenados");
         Collections.sort(lista);
         System.out.println(lista);
+        lista.sort(Comparator.comparing(Titulo::getClassificacao));
+        System.out.println("Ordem por Clasificação");
+        System.out.println(lista);
     }
 }
