@@ -3,9 +3,10 @@ package br.com.alura.screenmatch.principal;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Listas {
 
@@ -22,7 +23,7 @@ public class Listas {
 
         Serie lost = new Serie("Lost", 200);
 
-        ArrayList<Titulo> lista = new ArrayList<>();
+        List<Titulo> lista = new LinkedList<>();
 
         lista.add(filmeDoVinicius);
         lista.add(meuFilme);
@@ -37,7 +38,7 @@ public class Listas {
             }
         }
 
-        ArrayList<String> buscaPorArtista = new ArrayList<>();
+        List<String> buscaPorArtista = new LinkedList<>();
 
         buscaPorArtista.add("Adam Sandler");
         buscaPorArtista.add("Paulo Gustavo");
